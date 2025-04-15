@@ -21,8 +21,8 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 1.2;
-  max-width: 100vw;
-  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
   background-color: #eeeae5;
 }
 #es-rc #es-rc-content * {
@@ -33,14 +33,13 @@
 #es-rc #es-rc-content h4,
 #es-rc #es-rc-content h5,
 #es-rc #es-rc-content h6 {
-  margin: 0;
+  margin: 0 2%;
 }
 #es-rc #es-rc-content p {
   margin: 0;
 }
 #es-rc #es-rc-content img {
   max-width: 100%;
-  display: block;
   margin: 0 auto;
 }
 #es-rc #es-rc-content .es-title {
@@ -54,14 +53,15 @@
 }
 #es-rc #es-rc-content .es-kv,
 #es-rc #es-rc-content .es-features,
+#es-rc #es-rc-content .es-cross,
 #es-rc #es-rc-content .es-change,
 #es-rc #es-rc-content .es-video {
-  width: 100vw !important;
-  position: relative !important;
-  left: 49.5% !important;
-  right: 49.5% !important;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
+  width: 100vw;
+  position: relative;
+  left: 49.5%;
+  right: 49.5%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 #es-rc #es-rc-content .es-kv {
   background-color: #5fa6c9;
@@ -112,8 +112,7 @@
 }
 #es-rc #es-rc-content .es-cross {
   padding-top: 50px;
-  max-width: 100%;
-  margin: 0 auto;
+  max-width: 100vw;
   padding-bottom: 70px;
   position: relative;
   background: #e5dcd3;
@@ -218,6 +217,7 @@
 }
 #es-rc #es-rc-content .es-cross__disclaimer--desktop {
   margin-top: 20px;
+  margin-inline: 2%;
   display: none;
   font-family: "HurmeGeometricSans3-Regular", sans-serif;
   color: #13294b;
@@ -385,6 +385,7 @@
 @media (min-width: 360px) {
   #es-rc #es-rc-content .es-cross__container {
     width: 100%;
+    padding-inline: 20px 10px;
   }
 }
 @media (min-width: 400px) {
@@ -492,7 +493,7 @@
     position: static;
   }
   #es-rc #es-rc-content .es-cross {
-    max-width: 100%;
+    max-width: 100vw;
     background: #ffffff;
   }
   #es-rc #es-rc-content .es-cross__title--mobile {
@@ -647,7 +648,7 @@
     max-width: 30%;
     background: url("../images/steps-bg-desktop.webp") no-repeat center center;
     background-size: cover;
-    min-height: 640px;
+    min-height: 700px;
     width: 100%;
   }
   #es-rc #es-rc-content .es-change__inner {
@@ -685,7 +686,6 @@
   #es-rc #es-rc-content .es-features {
     min-height: 637px;
     max-width: 1920px;
-    margin: 0 auto;
   }
   #es-rc #es-rc-content .es-features__title {
     margin-bottom: 20px;
@@ -778,7 +778,7 @@
     font-size: 18px;
   }
   #es-rc #es-rc-content .es-change__list {
-    gap: 40px;
+    padding-left: 20px;
   }
   #es-rc #es-rc-content .es-change__right {
     min-height: 865px;
