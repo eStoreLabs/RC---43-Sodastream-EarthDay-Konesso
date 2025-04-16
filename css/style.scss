@@ -447,6 +447,7 @@ $secondary: #002238;
     padding: 6% 0% 2%;
     min-height: 600px;
     margin-bottom: 100px;
+    background: #eeeae5;
 
     &__container {
       position: relative;
@@ -882,7 +883,7 @@ $secondary: #002238;
 
     .es-features {
       min-height: 637px;
-      max-width: 1920px;
+      // max-width: 1920px;
       // margin: 0 auto;
 
       &__title {
